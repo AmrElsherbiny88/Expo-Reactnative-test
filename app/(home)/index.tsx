@@ -16,22 +16,21 @@ export default function Index() {
         username: 'Amr', 
       };
 
-      setMessages((prevMessages) => [...prevMessages, userMessage]); // Add user message
-      setInput(''); // Clear input field
+      setMessages((prevMessages) => [...prevMessages, userMessage]); 
+      setInput('');
 
-      // Simulate AI response after a delay
+  
       setTimeout(() => {
         const aiMessage = {
           content: generateAIResponse(input),
           time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
-          username: 'AI', // AI's username
+          username: 'AI', 
         };
-        setMessages((prevMessages) => [...prevMessages, aiMessage]); // Add AI response
+        setMessages((prevMessages) => [...prevMessages, aiMessage]); 
       }, 1000);
     }
   };
 
-  // Simulated AI response logic
   const generateAIResponse = (userInput: string): string => {
     const responses = [
       "That's interesting!",
@@ -59,7 +58,7 @@ export default function Index() {
         style={tw`flex-1 w-full`}
       />
 
-      {/* Input Field */}
+
       <View style={tw`flex-row items-center bg-white rounded-lg p-2 w-full mt-2`}>
         <TextInput
           style={tw`flex-1 p-2 text-black overflow-hidden outline-none`}
