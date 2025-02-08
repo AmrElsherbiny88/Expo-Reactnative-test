@@ -12,7 +12,7 @@
       "supportsTablet": true
     },
     "android": {
-      "package": "com.amrelsherbiny.expotest", 
+      "package": "com.amrelsherbiny.expotest",
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
@@ -43,8 +43,9 @@
         "origin": false
       },
       "eas": {
-        "projectId": "18a4e758-5cf0-4d66-84cd-0b98478f1693"
+        "projectId": "31f6ac99-bcef-4df6-82d8-782e6abb8413"
       }
-    }
+    },
+    "owner": "amrelsherbiny"
   }
 }
