@@ -1,0 +1,306 @@
+[
+  {
+    "id": "1",
+    "content": "Hey babe, good morning! How's the hotel? Did you manage any solid rest?",
+    "sender": "user2",
+    "timestamp": "7:58 AM"
+  },
+  {
+    "id": "2",
+    "content": "Morning. The bed's okay, but the AC made weird noises. I got enough sleep to function though.",
+    "sender": "user1",
+    "timestamp": "7:59 AM"
+  },
+  {
+    "id": "3",
+    "content": "Conference hotels often have their quirks. How are you feeling about your big presentation? Nervous? 😬",
+    "sender": "user2",
+    "timestamp": "7:59 AM"
+  },
+  {
+    "id": "4",
+    "content": "A bit anxious. Just doing a final run-through of my slides. I'll survive!",
+    "sender": "user1",
+    "timestamp": "8:00 AM"
+  },
+  {
+    "id": "5",
+    "content": "Hello both! Before I forget, want a quick news brief? Some interesting headlines today. 📰",
+    "sender": "assistant",
+    "timestamp": "8:00 AM"
+  },
+  {
+    "id": "6",
+    "content": "Sure, let's hear it. Anything major happening?",
+    "sender": "user2",
+    "timestamp": "8:01 AM"
+  },
+  {
+    "id": "7",
+    "content": "From what I gathered: there's a tech summit unveiling a new smartphone, a few stock market shifts in energy, and a big sports final tonight. Also, rumor says a celebrity couple split, but that's unconfirmed.",
+    "sender": "assistant",
+    "timestamp": "8:01 AM"
+  },
+  {
+    "id": "8",
+    "content": "Sounds like a busy day in the world. I'm mostly curious about that new smartphone. Might check it out later.",
+    "sender": "user1",
+    "timestamp": "8:02 AM"
+  },
+  {
+    "id": "9",
+    "content": "Kids were up early. They were asking about you. Seems they miss having you around.",
+    "sender": "user2",
+    "timestamp": "8:02 AM"
+  },
+  {
+    "id": "10",
+    "content": "I miss them too. Let them know I'll do a video call tonight if possible. Maybe around 7 PM?",
+    "sender": "user1",
+    "timestamp": "8:03 AM"
+  },
+  {
+    "id": "11",
+    "content": "Sure. That works. They have after-school soccer, but they'll be home by then.",
+    "sender": "user2",
+    "timestamp": "8:03 AM"
+  },
+  {
+    "id": "12",
+    "content": "Scheduling a 7 PM call for you. 🕖",
+    "sender": "assistant",
+    "timestamp": "8:04 AM",
+    "type": "action",
+    "action": "calendar"
+  },
+  {
+    "id": "13",
+    "content": "Good. So what's on your agenda today besides the presentation?",
+    "sender": "user2",
+    "timestamp": "8:04 AM"
+  },
+  {
+    "id": "14",
+    "content": "We have networking sessions in the morning. Then the main talk at 2 PM. I'll be swamped until at least 5.",
+    "sender": "user1",
+    "timestamp": "8:05 AM"
+  },
+  {
+    "id": "15",
+    "content": "Got it. The plumber is still supposed to come by between 2 and 3 PM here. Fun times. 😅",
+    "sender": "user2",
+    "timestamp": "8:05 AM"
+  },
+  {
+    "id": "16",
+    "content": "I'll keep track of that plumbing appointment. I can send you an alert when he's on his way, if you'd like.",
+    "sender": "assistant",
+    "timestamp": "8:06 AM"
+  },
+  {
+    "id": "17",
+    "content": "Yeah, do that. I might go out for groceries around noon, so a heads-up would help.",
+    "sender": "user2",
+    "timestamp": "8:06 AM"
+  },
+  {
+    "id": "18",
+    "content": "Noted. I'll ping you once the plumber confirms an ETA.",
+    "sender": "assistant",
+    "timestamp": "8:07 AM"
+  },
+  {
+    "id": "19",
+    "content": "So is the weather better there? It's drizzling all morning here. The kids had their raincoats on.",
+    "sender": "user2",
+    "timestamp": "8:07 AM"
+  },
+  {
+    "id": "20",
+    "content": "Sunny but cold. They said it might drop to 50°F by evening. I only packed one sweater.",
+    "sender": "user1",
+    "timestamp": "8:08 AM"
+  },
+  {
+    "id": "21",
+    "content": "Oops. Layer up if you can. You don't want to get sick. Remember last time you traveled and caught that bug?",
+    "sender": "user2",
+    "timestamp": "8:08 AM"
+  },
+  {
+    "id": "22",
+    "content": "Oh, that was awful. I'll be careful, promise.",
+    "sender": "user1",
+    "timestamp": "8:09 AM"
+  },
+  {
+    "id": "23",
+    "content": "By the way, have you heard about the new flight deals I saw online? Might be good for next month's getaway.",
+    "sender": "user2",
+    "timestamp": "8:09 AM"
+  },
+  {
+    "id": "24",
+    "content": "I can look them up if you want. I've seen some discounted tickets to a few coastal spots. 🏝️",
+    "sender": "assistant",
+    "timestamp": "8:09 AM"
+  },
+  {
+    "id": "25",
+    "content": "Let's hold off for now. We'll check out those deals together tonight or tomorrow.",
+    "sender": "user1",
+    "timestamp": "8:10 AM"
+  },
+  {
+    "id": "26",
+    "content": "Understood. Will wait until you decide the timing.",
+    "sender": "assistant",
+    "timestamp": "8:10 AM"
+  },
+  {
+    "id": "27",
+    "content": "So, how are the kids adjusting to the new school schedule? They seemed a bit cranky last week.",
+    "sender": "user1",
+    "timestamp": "8:11 AM"
+  },
+  {
+    "id": "28",
+    "content": "They're getting used to it. The early mornings are tough, but they're fine once they're out the door.",
+    "sender": "user2",
+    "timestamp": "8:11 AM"
+  },
+  {
+    "id": "29",
+    "content": "That's good to hear. I'll try to help with drop-offs once I'm back.",
+    "sender": "user1",
+    "timestamp": "8:12 AM"
+  },
+  {
+    "id": "30",
+    "content": "Appreciated. By the way, did you pay the phone bill before you left?",
+    "sender": "user2",
+    "timestamp": "8:12 AM"
+  },
+  {
+    "id": "31",
+    "content": "Yep, all sorted. You shouldn't get any random disconnections. 😅",
+    "sender": "user1",
+    "timestamp": "8:13 AM"
+  },
+  {
+    "id": "32",
+    "content": "Cool. One less thing for me to worry about.",
+    "sender": "user2",
+    "timestamp": "8:13 AM"
+  },
+  {
+    "id": "33",
+    "content": "I can set up recurring reminders if you'd prefer not to track bills manually each time.",
+    "sender": "assistant",
+    "timestamp": "8:14 AM"
+  },
+  {
+    "id": "34",
+    "content": "That might be helpful. Just put them a week before each due date.",
+    "sender": "user2",
+    "timestamp": "8:14 AM"
+  },
+  {
+    "id": "35",
+    "content": "Setting up recurring bill reminders, one week prior to each due date...",
+    "sender": "assistant",
+    "timestamp": "8:15 AM",
+    "type": "action",
+    "action": "calendar"
+  },
+  {
+    "id": "36",
+    "content": "Anyway, I should head down for the conference breakfast soon. My session starts in an hour.",
+    "sender": "user1",
+    "timestamp": "8:15 AM"
+  },
+  {
+    "id": "37",
+    "content": "Grab something healthy. Remember, you tend to skip meals when you're stressed.",
+    "sender": "user2",
+    "timestamp": "8:16 AM"
+  },
+  {
+    "id": "38",
+    "content": "I will. Fruit salad and maybe some coffee. Gotta stay alert!",
+    "sender": "user1",
+    "timestamp": "8:16 AM"
+  },
+  {
+    "id": "39",
+    "content": "I'll quickly remind you: your presentation is at 2 PM, and there's a networking event at 4 PM. 🗓️",
+    "sender": "assistant",
+    "timestamp": "8:16 AM"
+  },
+  {
+    "id": "40",
+    "content": "Great. That means I'll be done by 5 or so, then we can do that video call at 7.",
+    "sender": "user1",
+    "timestamp": "8:17 AM"
+  },
+  {
+    "id": "41",
+    "content": "Yes, 7 it is. We'll be waiting. Probably the kids will want to show you their new drawings.",
+    "sender": "user2",
+    "timestamp": "8:17 AM"
+  },
+  {
+    "id": "42",
+    "content": "Aww, I love their artwork. Save a spot on the fridge. 😄",
+    "sender": "user1",
+    "timestamp": "8:18 AM"
+  },
+  {
+    "id": "43",
+    "content": "No problem. By the way, got an update from the plumber—he's on track for 2:30 arrival.",
+    "sender": "assistant",
+    "timestamp": "8:18 AM"
+  },
+  {
+    "id": "44",
+    "content": "Cool. I'll run my errands early so I can be home by 2.",
+    "sender": "user2",
+    "timestamp": "8:19 AM"
+  },
+  {
+    "id": "45",
+    "content": "Alright, I'm signing off now. Need to mentally prep for this talk. Wish me luck!",
+    "sender": "user1",
+    "timestamp": "8:19 AM"
+  },
+  {
+    "id": "46",
+    "content": "Good luck. You'll do fine. Just breathe and be confident.",
+    "sender": "user2",
+    "timestamp": "8:20 AM"
+  },
+  {
+    "id": "47",
+    "content": "Yes, you got this! And don't forget your slides. 😉",
+    "sender": "assistant",
+    "timestamp": "8:20 AM"
+  },
+  {
+    "id": "48",
+    "content": "Haha, thanks. Catch you both later.",
+    "sender": "user1",
+    "timestamp": "8:21 AM"
+  },
+  {
+    "id": "49",
+    "content": "I'll be around. Let me know how it goes. Bye!",
+    "sender": "user2",
+    "timestamp": "8:21 AM"
+  },
+  {
+    "id": "50",
+    "content": "Bye. I'll ping you with any updates on the house or the plumber if needed.",
+    "sender": "assistant",
+    "timestamp": "8:22 AM"
+  }
+]
