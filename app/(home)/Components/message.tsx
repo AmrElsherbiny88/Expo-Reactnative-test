@@ -13,7 +13,7 @@ const Message: React.FC<MessageProps> = ({
   content,
   timestamp,
   sender,
-  theme = "dark",
+  theme,
 }) => {
   const isCurrentUser = sender === "user1"; //sender === currentUsers
   const isAssistant = sender === "assistant";
@@ -24,22 +24,22 @@ const Message: React.FC<MessageProps> = ({
     ${
       theme === "light"
         ? isCurrentUser
-          ? "bg-green-500"
+          ? "bg-[#29A46B]"
           : isAssistant
-          ? "bg-gray-300"
-          : "bg-white"
+          ? "bg-[#EFEFEF]"
+          : "border border-[#29A46B]"
         : isCurrentUser
-        ? "bg-green-700"
+        ? "bg-[#29A46B] bg-opacity-20"
         : isAssistant
-        ? "bg-gray-700"
-        : "bg-black"
+        ? "bg-[#EFEFEF] bg-opacity-10"
+        : "border border-[#29A46B] border-opacity-20"
     }
   `;
 
   const textStyle = tw`
     ${
       theme === "light"
-        ? isCurrentUser || isAssistant
+        ? isCurrentUser
           ? "text-white"
           : "text-black"
         : "text-white"
@@ -49,13 +49,15 @@ const Message: React.FC<MessageProps> = ({
   const timestampStyle = tw`
     text-xs mt-1 ${
       theme === "light"
-        ? "text-gray-600"
-        : "text-gray-400"
+        ? isCurrentUser
+          ? "text-white"
+          : "text-black"
+        : "text-white"
     }
   `;
 
   return (
-    <View style={containerStyle}>
+    <>
       {!isCurrentUser && !isAssistant && (
         <Text
           style={tw`text-sm font-bold mb-1 ${
@@ -66,13 +68,16 @@ const Message: React.FC<MessageProps> = ({
           {sender}
         </Text>
       )}
-      <Text style={[textStyle, tw`break-words`]}>
-        {content}
-      </Text>
-      <Text style={timestampStyle}>
-        {timestamp}
-      </Text>
-    </View>
+      <View style={containerStyle}>
+        <Text
+          style={[textStyle, tw`break-words`]}>
+          {content}
+        </Text>
+        <Text style={timestampStyle}>
+          {timestamp}
+        </Text>
+      </View>
+    </>
   );
 };
 
