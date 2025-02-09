@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const amr = () => {
-  return (
-    <div>amr</div>
-  )
-}
+  return <div>amr</div>;
+};
 
-export default amr
+export default amr;
