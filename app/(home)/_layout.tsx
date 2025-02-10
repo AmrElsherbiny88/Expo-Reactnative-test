@@ -8,8 +8,9 @@ const _layout = () => {
       <Stack.Screen
         name='index'
         options={{
+          headerTitleAlign: "center",
           headerStyle: {
-            backgroundColor: "#FAF3E9",
+            backgroundColor: "#29A46B",
           },
           headerTitle: () => <Header />,
         }}

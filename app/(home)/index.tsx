@@ -5,6 +5,7 @@ import {
   TouchableOpacity,
   Text,
   FlatList,
+  useColorScheme,
 } from "react-native";
 import tw from "twrnc";
 import Message from "./Components/message";
@@ -21,7 +22,8 @@ export default function Index() {
   >(initialMessages);
 
   const [input, setInput] = useState("");
-
+  // let colorScheme = "dark";
+  let colorScheme = useColorScheme();
   const sendMessage = () => {
     if (input.trim()) {
       const userMessage = {
@@ -49,7 +51,7 @@ export default function Index() {
               minute: "2-digit",
             }
           ),
-          username: "AI",
+          username: "assistant",
         };
         setMessages((prevMessages: any) => [
           ...prevMessages,
@@ -76,7 +78,12 @@ export default function Index() {
   };
 
   return (
-    <View style={tw`flex-1 bg-[#FAF3E9] p-4`}>
+    <View
+      style={tw`flex-1 bg-${
+        colorScheme === "light"
+          ? "white"
+          : "[#1B1C1B]"
+      } p-4`}>
       <FlatList
         data={messages}
         keyExtractor={(_, index) =>
@@ -87,31 +94,52 @@ export default function Index() {
             content={item.content}
             timestamp={item.timestamp}
             sender={item.sender}
-            theme='light'
+            theme={
+              colorScheme === "light"
+                ? "light"
+                : "dark"
+            }
           />
         )}
         style={tw`flex-1 w-full`}
       />
 
       <View
-        style={tw`flex-row items-center  rounded-lg  w-full mt-2 `}>
+        style={tw`flex-row items-center
+        ${
+          colorScheme === "light"
+            ? "bg-white"
+            : "bg-[#2B2B2B]"
+        } rounded-lg p-3  w-full mt-2 `}>
         <TextInput
-          style={tw`flex-1 text-black overflow-hidden outline-none bg-[#F6E6D6] rounded-3xl px-5 py-4 m-2 placeholder:text-green-500`}
+          style={tw`flex-1 text-black overflow-hidden ${
+            colorScheme === "light"
+              ? "text-[#085934] border-[#29A46B] "
+              : "text-[#EDEDED] border-[#EDEDED] "
+          } border-[1px] rounded-xl px-5 py-4 m-2 placeholder:text-green-500`}
           placeholder='Type your message...'
-          placeholderTextColor={tw.color(
-            "green-800"
-          )}
+          // placeholderTextColor={tw.color(
+          //   "green-800"
+          // )}
           value={input}
           onChangeText={setInput}
         />
 
         <TouchableOpacity
           onPress={sendMessage}
-          style={tw`bg-[#ECCDAF] px-4 py-4 rounded-full`}>
+          style={tw`bg-${
+            colorScheme === "light"
+              ? "[#29A46B]"
+              : "[#EFEFEF]"
+          } px-4 py-4 rounded-full`}>
           <Feather
             name='send'
             size={20}
-            color='black'
+            color={
+              colorScheme === "light"
+                ? "white"
+                : "black"
+            }
           />
         </TouchableOpacity>
       </View>
